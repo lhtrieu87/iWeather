@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <LBBlurredImage/UIImageView+LBBlurredImage.h>
+#import "LHManager.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) UIImageView *backgroundImageView;
@@ -94,6 +95,8 @@
     iconView.contentMode = UIViewContentModeScaleAspectFit;
     iconView.backgroundColor = [UIColor clearColor];
     [header addSubview:iconView];
+    
+    [[LHManager sharedManager] findCurrentLocation];
 }
 
 - (void)viewWillLayoutSubviews {

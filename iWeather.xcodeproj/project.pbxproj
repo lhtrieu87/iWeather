@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57C8F46C1B53605D003281CD /* THClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8F46B1B53605D003281CD /* THClient.m */; };
+		57C8F46F1B5360AB003281CD /* LHManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8F46E1B5360AB003281CD /* LHManager.m */; };
+		57C8F4721B5360C9003281CD /* LHCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8F4711B5360C9003281CD /* LHCondition.m */; };
+		57C8F4751B5360EB003281CD /* LHDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8F4741B5360EB003281CD /* LHDailyForecast.m */; };
 		7DBFDAD61A4FD7ACA2C5B8AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9815E0C306E4379CB706B4F /* libPods.a */; };
 		CD6937401B5290CE005725BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD69373F1B5290CE005725BF /* main.m */; };
 		CD6937431B5290CE005725BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6937421B5290CE005725BF /* AppDelegate.m */; };
@@ -54,6 +58,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57C8F46A1B53605D003281CD /* THClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THClient.h; sourceTree = "<group>"; };
+		57C8F46B1B53605D003281CD /* THClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THClient.m; sourceTree = "<group>"; };
+		57C8F46D1B5360AB003281CD /* LHManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHManager.h; sourceTree = "<group>"; };
+		57C8F46E1B5360AB003281CD /* LHManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHManager.m; sourceTree = "<group>"; };
+		57C8F4701B5360C9003281CD /* LHCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCondition.h; sourceTree = "<group>"; };
+		57C8F4711B5360C9003281CD /* LHCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHCondition.m; sourceTree = "<group>"; };
+		57C8F4731B5360EB003281CD /* LHDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHDailyForecast.h; sourceTree = "<group>"; };
+		57C8F4741B5360EB003281CD /* LHDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHDailyForecast.m; sourceTree = "<group>"; };
 		B9815E0C306E4379CB706B4F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD69373A1B5290CE005725BF /* iWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD69373E1B5290CE005725BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,6 +178,14 @@
 				CD69374A1B5290CE005725BF /* Images.xcassets */,
 				CD69374C1B5290CE005725BF /* LaunchScreen.xib */,
 				CD69373D1B5290CE005725BF /* Supporting Files */,
+				57C8F46A1B53605D003281CD /* THClient.h */,
+				57C8F46D1B5360AB003281CD /* LHManager.h */,
+				57C8F46E1B5360AB003281CD /* LHManager.m */,
+				57C8F4701B5360C9003281CD /* LHCondition.h */,
+				57C8F4711B5360C9003281CD /* LHCondition.m */,
+				57C8F4731B5360EB003281CD /* LHDailyForecast.h */,
+				57C8F4741B5360EB003281CD /* LHDailyForecast.m */,
+				57C8F46B1B53605D003281CD /* THClient.m */,
 			);
 			path = iWeather;
 			sourceTree = "<group>";
@@ -398,7 +418,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C8F46F1B5360AB003281CD /* LHManager.m in Sources */,
+				57C8F46C1B53605D003281CD /* THClient.m in Sources */,
 				CD6937461B5290CE005725BF /* ViewController.m in Sources */,
+				57C8F4751B5360EB003281CD /* LHDailyForecast.m in Sources */,
+				57C8F4721B5360C9003281CD /* LHCondition.m in Sources */,
 				CD6937431B5290CE005725BF /* AppDelegate.m in Sources */,
 				CD6937401B5290CE005725BF /* main.m in Sources */,
 			);
@@ -528,6 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -539,6 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
